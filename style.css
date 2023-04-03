@@ -8,9 +8,13 @@
     position: fixed;top: 0px;left: 0px;z-index: 2;
     width: 150px;height: 100%;background-color: #c7c7c7;
 }
+
 header{margin: 25px 0px 5px 0px;font-size: 24px;font-weight: bold;}
+
 header:not(#navbar header){border-bottom: 2px solid #121212;width: fit-content;padding: 2px;}
+
 #navbar header{text-align: center;}
+
 #navbar a{
     display: block;width: calc(100% - 8px);
     text-decoration: none;text-align: center;
@@ -18,16 +22,34 @@ header:not(#navbar header){border-bottom: 2px solid #121212;width: fit-content;p
     background-color: #e2e2e2;color: #121212;
     font-size: 18px;transition-duration: 0.3s;
 }
+
 #navbar a:hover{background-color: #121212;color: #e2e2e2;}
+
 #main-doc{
     position: relative;left: 175px;
     width: calc(100% - 175px);padding: 10px 0px 50px 0px;
 }
+
 p{font-size: 16px;padding: 6px 0px 2px 0px;}
+
 ul, ol{padding: 10px 30px;background-color: #e2e2e2;width: fit-content;}
+
 pre{
     padding: 6px 10px;width: fit-content;
     background-color: #121212;color: #e2e2e2;
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    color: black;
+    bottom:  0;
+    padding: 8px;
+    right: 0;
+    cursor: pointer;     
+}
+.icon i{
+    font-size: 15px; 
 }
 
 @media screen and (max-width: 800px) {
